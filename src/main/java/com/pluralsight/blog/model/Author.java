@@ -22,6 +22,7 @@ public class Author {
     @JsonIgnore private String password;
     @OneToMany
     private List<Post> posts;
+    @Version private Long version;
 
     public Author() {
         super();
